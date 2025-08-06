@@ -17,6 +17,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { BookOpen, Users, Award, Lightbulb } from "lucide-react";
+import { programs } from "@/data/programs";
 
 function AnimatedStat({ finalValue, label }: { finalValue: number; label: string }) {
   const [count, setCount] = useState(0);
@@ -41,33 +42,6 @@ function AnimatedStat({ finalValue, label }: { finalValue: number; label: string
 }
 
 export default function Home() {
-  const programs = [
-    {
-      title: "Computer Science",
-      description: "Explore the world of algorithms, data structures, and software engineering.",
-      image: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=600&h=400&auto=format&fit=crop",
-      aiHint: "computer science",
-    },
-    {
-      title: "Business Administration",
-      description: "Learn the fundamentals of management, finance, and marketing.",
-      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600&h=400&auto=format&fit=crop",
-      aiHint: "business students",
-    },
-    {
-      title: "Mass Communication",
-      description: "Master the art of storytelling, media production, and public relations.",
-      image: "https://images.unsplash.com/photo-1455743425380-9a4f326179e8?q=80&w=600&h=400&auto=format&fit=crop",
-      aiHint: "media studio",
-    },
-    {
-      title: "Nursing Science",
-      description: "Gain the skills and knowledge to provide compassionate patient care.",
-      image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=600&h=400&auto=format&fit=crop",
-      aiHint: "nursing student",
-    },
-  ];
-
   const news = [
     {
       title: "Ritman College Celebrates 20 Years of Excellence",
@@ -201,7 +175,9 @@ export default function Home() {
                           <CardDescription>{program.description}</CardDescription>
                         </CardContent>
                         <CardFooter>
-                           <Button variant="outline">Learn More</Button>
+                           <Link href={`/academics/${program.slug}`}>
+                            <Button variant="outline">Learn More</Button>
+                           </Link>
                         </CardFooter>
                       </Card>
                     </div>
