@@ -142,21 +142,22 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-grow">
-        <section className="relative py-20 md:py-32 bg-secondary/50">
+        <section className="relative h-[60vh] flex items-center justify-center text-white">
           <Image
             src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1920&h=1080&auto=format&fit=crop"
             alt="College campus"
             layout="fill"
             objectFit="cover"
-            className="absolute inset-0 opacity-10 z-0"
+            className="absolute inset-0 z-0"
             data-ai-hint="college building"
             priority
           />
-          <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4 font-headline">
+          <div className="absolute inset-0 bg-black/50 z-10" />
+          <div className="container mx-auto px-4 text-center relative z-20">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 font-headline">
               Shape Your Future at Ritman College
             </h1>
-            <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-8">
+            <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8">
               Discover a world of opportunity with our industry-focused programs and vibrant campus life.
             </p>
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
