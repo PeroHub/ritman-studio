@@ -24,6 +24,7 @@ export function Footer() {
         <div>
           <h4 className="mb-4 font-bold font-headline">Quick Links</h4>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/about" className="hover:text-primary">About Us</Link></li>
             <li><Link href="/admissions" className="hover:text-primary">Admissions</Link></li>
             <li><Link href="/academics" className="hover:text-primary">Academics</Link></li>
             <li><Link href="/gallery" className="hover:text-primary">Gallery</Link></li>

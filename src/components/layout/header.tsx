@@ -21,6 +21,7 @@ export function Header() {
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           <Link href="/" className="transition-colors hover:text-primary">Home</Link>
+          <Link href="/about" className="transition-colors hover:text-primary">About Us</Link>
           <Link href="/admissions" className="transition-colors hover:text-primary">Admissions</Link>
           <Link href="/academics" className="transition-colors hover:text-primary">Academics</Link>
           <Link href="/student-life" className="transition-colors hover:text-primary">Student Life</Link>
@@ -45,6 +46,7 @@ export function Header() {
                 </Link>
                 <nav className="flex flex-col gap-4 text-lg">
                   <Link href="/" className="transition-colors hover:text-primary" onClick={closeSheet}>Home</Link>
+                  <Link href="/about" className="transition-colors hover:text-primary" onClick={closeSheet}>About Us</Link>
                   <Link href="/admissions" className="transition-colors hover:text-primary" onClick={closeSheet}>Admissions</Link>
                   <Link href="/academics" className="transition-colors hover:text-primary" onClick={closeSheet}>Academics</Link>
                   <Link href="/student-life" className="transition-colors hover:text-primary" onClick={closeSheet}>Student Life</Link>
