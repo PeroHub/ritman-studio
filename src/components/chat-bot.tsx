@@ -97,7 +97,7 @@ export function ChatBot() {
         </Button>
       </div>
       {isOpen && (
-        <Card className="fixed bottom-24 right-4 z-50 w-full max-w-sm shadow-2xl flex flex-col h-[60vh]">
+        <Card className="fixed bottom-0 right-0 z-50 w-full h-full flex flex-col sm:w-full sm:max-w-sm sm:h-[60vh] sm:bottom-24 sm:right-4 sm:rounded-lg shadow-2xl">
           <CardHeader className="flex flex-row items-center justify-between border-b">
             <div className="flex items-center gap-3">
               <Bot className="h-6 w-6 text-primary" />
