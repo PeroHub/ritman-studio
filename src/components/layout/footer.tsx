@@ -1,3 +1,4 @@
+
 import Link from "next/link"
 import { Mountain, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 
@@ -24,7 +25,7 @@ export function Footer() {
           <h4 className="mb-4 font-bold font-headline">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             <li><Link href="/admissions" className="hover:text-primary">Admissions</Link></li>
-            <li><Link href="/#academics" className="hover:text-primary">Academics</Link></li>
+            <li><Link href="/academics" className="hover:text-primary">Academics</Link></li>
             <li><Link href="/gallery" className="hover:text-primary">Gallery</Link></li>
             <li><Link href="/news" className="hover:text-primary">News & Events</Link></li>
           </ul>
@@ -32,10 +33,9 @@ export function Footer() {
         <div>
           <h4 className="mb-4 font-bold font-headline">Student Life</h4>
           <ul className="space-y-2 text-sm">
-            <li><Link href="#campus-life" className="hover:text-primary">Campus Life</Link></li>
-            <li><Link href="#hostel" className="hover:text-primary">Hostel</Link></li>
-            <li><Link href="#sports" className="hover:text-primary">Sports</Link></li>
-            <li><Link href="#clubs" className="hover:text-primary">Clubs</Link></li>
+            <li><Link href="/student-life#campus-facilities" className="hover:text-primary">Campus Facilities</Link></li>
+            <li><Link href="/student-life#clubs-organizations" className="hover:text-primary">Clubs</Link></li>
+            <li><Link href="/student-life#gallery" className="hover:text-primary">Campus Moments</Link></li>
           </ul>
         </div>
         <div>
