@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useRef, useEffect, useActionState } from "react";
@@ -107,7 +108,7 @@ export function ChatBot() {
               <X className="h-4 w-4" />
             </Button>
           </CardHeader>
-          <CardContent className="flex-grow p-0">
+          <CardContent className="flex-1 p-0 overflow-y-auto">
             <ScrollArea className="h-full" ref={scrollAreaRef}>
               <div className="p-4 space-y-4">
                 <div className="flex items-start gap-3">
