@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -144,7 +145,7 @@ export default function Home() {
       <main className="flex-grow">
         <section className="relative h-[60vh] flex items-center justify-center text-white">
           <Image
-            src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=600&h=400&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1740&auto=format&fit=crop"
             alt="College campus"
             fill
             className="object-cover"
@@ -218,27 +219,34 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-headline">Latest News & Events</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {news.map((item, index) => (
-                <Card key={index} className="flex flex-col overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-xl">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={600}
-                    height={400}
-                    className="object-cover w-full h-48"
-                    data-ai-hint={item.aiHint}
-                  />
-                  <CardHeader>
-                    <CardTitle className="font-headline text-lg">{item.title}</CardTitle>
-                    <p className="text-sm text-muted-foreground">{item.date}</p>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <p>{item.snippet}</p>
-                  </CardContent>
-                  <CardFooter>
-                    <Button variant="link" className="p-0 text-primary">Read More</Button>
-                  </CardFooter>
-                </Card>
+                 <Link href="/news" key={index}>
+                    <Card className="flex flex-col overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full">
+                    <Image
+                        src={item.image}
+                        alt={item.title}
+                        width={600}
+                        height={400}
+                        className="object-cover w-full h-48"
+                        data-ai-hint={item.aiHint}
+                    />
+                    <CardHeader>
+                        <CardTitle className="font-headline text-lg">{item.title}</CardTitle>
+                        <p className="text-sm text-muted-foreground">{item.date}</p>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                        <p>{item.snippet}</p>
+                    </CardContent>
+                    <CardFooter>
+                        <Button variant="link" className="p-0 text-primary">Read More</Button>
+                    </CardFooter>
+                    </Card>
+                </Link>
               ))}
+            </div>
+             <div className="text-center mt-12">
+                <Link href="/news">
+                    <Button variant="outline">View All News</Button>
+                </Link>
             </div>
           </div>
         </section>
