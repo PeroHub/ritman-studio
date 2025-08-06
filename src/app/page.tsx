@@ -32,7 +32,7 @@ function AnimatedStat({ finalValue, label }: { finalValue: number; label: string
   return (
     <div className="text-center">
       <p className="text-4xl md:text-5xl font-bold text-primary">
-        {count.toLocaleString()}+
+        {count.toLocaleString()}{label.includes('%') ? '' : '+'}
       </p>
       <p className="text-sm md:text-base text-foreground/80 mt-1">{label}</p>
     </div>
@@ -44,25 +44,25 @@ export default function Home() {
     {
       title: "Computer Science",
       description: "Explore the world of algorithms, data structures, and software engineering.",
-      image: "https://source.unsplash.com/600x400/?computer,science",
+      image: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=600&h=400&auto=format&fit=crop",
       aiHint: "computer science",
     },
     {
       title: "Business Administration",
       description: "Learn the fundamentals of management, finance, and marketing.",
-      image: "https://source.unsplash.com/600x400/?business,students",
+      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600&h=400&auto=format&fit=crop",
       aiHint: "business students",
     },
     {
       title: "Mass Communication",
       description: "Master the art of storytelling, media production, and public relations.",
-      image: "https://source.unsplash.com/600x400/?media,studio",
+      image: "https://images.unsplash.com/photo-1455743425380-9a4f326179e8?q=80&w=600&h=400&auto=format&fit=crop",
       aiHint: "media studio",
     },
     {
       title: "Nursing Science",
       description: "Gain the skills and knowledge to provide compassionate patient care.",
-      image: "https://source.unsplash.com/600x400/?nursing,student",
+      image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=600&h=400&auto=format&fit=crop",
       aiHint: "nursing student",
     },
   ];
@@ -72,21 +72,21 @@ export default function Home() {
       title: "Ritman College Celebrates 20 Years of Excellence",
       date: "October 26, 2023",
       snippet: "Join us as we mark two decades of academic achievement and community impact.",
-      image: "https://source.unsplash.com/600x400/?college,campus",
+      image: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=600&h=400&auto=format&fit=crop",
       aiHint: "college campus",
     },
     {
       title: "Annual Sports Festival Kicks Off",
       date: "October 24, 2023",
       snippet: "Students showcase their athletic prowess in the most anticipated event of the year.",
-      image: "https://source.unsplash.com/600x400/?students,sports",
+      image: "https://images.unsplash.com/photo-1541252260730-0412e8e2108e?q=80&w=600&h=400&auto=format&fit=crop",
       aiHint: "students sports",
     },
     {
       title: "New Research Center for AI and Robotics Unveiled",
       date: "October 22, 2023",
       snippet: "The new state-of-the-art facility will foster innovation and cutting-edge research.",
-      image: "https://source.unsplash.com/600x400/?robotics,lab",
+      image: "https://images.unsplash.com/photo-1518314916383-a6b46a3423a6?q=80&w=600&h=400&auto=format&fit=crop",
       aiHint: "robotics lab",
     },
   ];
@@ -96,21 +96,21 @@ export default function Home() {
       name: "Adebayo Adekunle",
       program: "Computer Science, '22",
       quote: "Ritman College provided me with a solid foundation to launch my career in tech. The lecturers are supportive and the facilities are world-class.",
-      avatar: "https://source.unsplash.com/100x100/?male,student",
+      avatar: "https://images.unsplash.com/photo-1628157588553-5ee30a6c5aa4?q=80&w=100&h=100&auto=format&fit=crop",
       aiHint: "male student",
     },
     {
       name: "Chiamaka Nwosu",
       program: "Business Administration, '23",
       quote: "The practical approach to learning at Ritman prepared me for the real world. I'm grateful for the opportunities and connections I made.",
-      avatar: "https://source.unsplash.com/100x100/?female,student",
+      avatar: "https://images.unsplash.com/photo-1521567097361-b3843513a863?q=80&w=100&h=100&auto=format&fit=crop",
       aiHint: "female student",
     },
     {
       name: "Emeka Okafor",
       program: "Mass Communication, '21",
       quote: "My time at Ritman was transformative. I honed my skills, built a strong network, and discovered my passion for storytelling.",
-      avatar: "https://source.unsplash.com/100x100/?happy,student",
+      avatar: "https://images.unsplash.com/photo-1582552594393-275b30214918?q=80&w=100&h=100&auto=format&fit=crop",
       aiHint: "happy student",
     },
   ];
@@ -145,7 +145,7 @@ export default function Home() {
         <section className="relative py-20 md:py-32 bg-secondary/50">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-10"
-            style={{ backgroundImage: "url('https://source.unsplash.com/1920x1080/?college,building')" }}
+            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1920&h=1080&auto=format&fit=crop')" }}
             data-ai-hint="college building"
           ></div>
           <div className="container mx-auto px-4 text-center relative z-10">
