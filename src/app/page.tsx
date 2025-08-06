@@ -146,14 +146,13 @@ export default function Home() {
           <Image
             src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1920&h=1080&auto=format&fit=crop"
             alt="College campus"
-            layout="fill"
-            objectFit="cover"
-            className="absolute inset-0 z-0"
+            fill
+            className="object-cover"
             data-ai-hint="college building"
             priority
           />
-          <div className="absolute inset-0 bg-black/50 z-10" />
-          <div className="container mx-auto px-4 text-center relative z-20">
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="container mx-auto px-4 text-center relative">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 font-headline">
               Shape Your Future at Ritman College
             </h1>
