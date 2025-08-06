@@ -144,7 +144,7 @@ export default function Home() {
       <main className="flex-grow">
         <section className="relative h-[60vh] flex items-center justify-center text-white">
           <Image
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1920&h=1080&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=600&h=400&auto=format&fit=crop"
             alt="College campus"
             fill
             className="object-cover"
