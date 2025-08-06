@@ -44,25 +44,25 @@ export default function Home() {
     {
       title: "Computer Science",
       description: "Explore the world of algorithms, data structures, and software engineering.",
-      image: "https://placehold.co/600x400.png",
+      image: "https://source.unsplash.com/600x400/?computer,science",
       aiHint: "computer science",
     },
     {
       title: "Business Administration",
       description: "Learn the fundamentals of management, finance, and marketing.",
-      image: "https://placehold.co/600x400.png",
+      image: "https://source.unsplash.com/600x400/?business,students",
       aiHint: "business students",
     },
     {
       title: "Mass Communication",
       description: "Master the art of storytelling, media production, and public relations.",
-      image: "https://placehold.co/600x400.png",
+      image: "https://source.unsplash.com/600x400/?media,studio",
       aiHint: "media studio",
     },
     {
       title: "Nursing Science",
       description: "Gain the skills and knowledge to provide compassionate patient care.",
-      image: "https://placehold.co/600x400.png",
+      image: "https://source.unsplash.com/600x400/?nursing,student",
       aiHint: "nursing student",
     },
   ];
@@ -72,21 +72,21 @@ export default function Home() {
       title: "Ritman College Celebrates 20 Years of Excellence",
       date: "October 26, 2023",
       snippet: "Join us as we mark two decades of academic achievement and community impact.",
-      image: "https://placehold.co/600x400.png",
+      image: "https://source.unsplash.com/600x400/?college,campus",
       aiHint: "college campus",
     },
     {
       title: "Annual Sports Festival Kicks Off",
       date: "October 24, 2023",
       snippet: "Students showcase their athletic prowess in the most anticipated event of the year.",
-      image: "https://placehold.co/600x400.png",
+      image: "https://source.unsplash.com/600x400/?students,sports",
       aiHint: "students sports",
     },
     {
       title: "New Research Center for AI and Robotics Unveiled",
       date: "October 22, 2023",
       snippet: "The new state-of-the-art facility will foster innovation and cutting-edge research.",
-      image: "https://placehold.co/600x400.png",
+      image: "https://source.unsplash.com/600x400/?robotics,lab",
       aiHint: "robotics lab",
     },
   ];
@@ -96,21 +96,21 @@ export default function Home() {
       name: "Adebayo Adekunle",
       program: "Computer Science, '22",
       quote: "Ritman College provided me with a solid foundation to launch my career in tech. The lecturers are supportive and the facilities are world-class.",
-      avatar: "https://placehold.co/100x100.png",
+      avatar: "https://source.unsplash.com/100x100/?male,student",
       aiHint: "male student",
     },
     {
       name: "Chiamaka Nwosu",
       program: "Business Administration, '23",
       quote: "The practical approach to learning at Ritman prepared me for the real world. I'm grateful for the opportunities and connections I made.",
-      avatar: "https://placehold.co/100x100.png",
+      avatar: "https://source.unsplash.com/100x100/?female,student",
       aiHint: "female student",
     },
     {
       name: "Emeka Okafor",
       program: "Mass Communication, '21",
       quote: "My time at Ritman was transformative. I honed my skills, built a strong network, and discovered my passion for storytelling.",
-      avatar: "https://placehold.co/100x100.png",
+      avatar: "https://source.unsplash.com/100x100/?happy,student",
       aiHint: "happy student",
     },
   ];
@@ -145,7 +145,7 @@ export default function Home() {
         <section className="relative py-20 md:py-32 bg-secondary/50">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-10"
-            style={{ backgroundImage: "url('https://placehold.co/1920x1080.png')" }}
+            style={{ backgroundImage: "url('https://source.unsplash.com/1920x1080/?college,building')" }}
             data-ai-hint="college building"
           ></div>
           <div className="container mx-auto px-4 text-center relative z-10">
