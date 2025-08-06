@@ -4,12 +4,12 @@ import { Footer } from "@/components/layout/footer";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Users, Shield, Heart, Utensils, Home, Trophy, PaintBrush } from "lucide-react";
+import { Users, Shield, Heart, Utensils, Home, Trophy, Paintbrush } from "lucide-react";
 
 export default function StudentLifePage() {
   const clubs = [
     { name: "Debate Club", icon: <Users className="w-8 h-8 text-primary" /> },
-    { name: "Drama Club", icon: <PaintBrush className="w-8 h-8 text-primary" /> },
+    { name: "Drama Club", icon: <Paintbrush className="w-8 h-8 text-primary" /> },
     { name: "Sports Club", icon: <Trophy className="w-8 h-8 text-primary" /> },
     { name: "Tech Club", icon: <Shield className="w-8 h-8 text-primary" /> },
   ];
