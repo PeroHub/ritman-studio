@@ -32,7 +32,7 @@ function AnimatedStat({ finalValue, label }: { finalValue: number; label: string
   return (
     <div className="text-center">
       <p className="text-4xl md:text-5xl font-bold text-primary">
-        {count.toLocaleString()}{label.includes('%') ? '' : '+'}
+        {count.toLocaleString()}{label.includes('%') ? '%' : '+'}
       </p>
       <p className="text-sm md:text-base text-foreground/80 mt-1">{label}</p>
     </div>
@@ -143,11 +143,15 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <section className="relative py-20 md:py-32 bg-secondary/50">
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-10"
-            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1920&h=1080&auto=format&fit=crop')" }}
+          <Image
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1920&h=1080&auto=format&fit=crop"
+            alt="College campus"
+            layout="fill"
+            objectFit="cover"
+            className="absolute inset-0 opacity-10 z-0"
             data-ai-hint="college building"
-          ></div>
+            priority
+          />
           <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4 font-headline">
               Shape Your Future at Ritman College
