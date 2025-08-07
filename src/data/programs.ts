@@ -19,7 +19,7 @@ export const programs = [
     slug: "business-administration",
     title: "Business Administration",
     description: "Learn the fundamentals of management, finance, and marketing.",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600&h=400&auto=format&fit=crop",
+    image: "/images/class.jpg",
     aiHint: "business students",
     details: {
       longDescription: "The Business Administration program equips students with the essential skills to excel in the corporate world. Our curriculum covers a broad range of topics, including strategic management, financial accounting, and global marketing. Through case studies, internships, and real-world projects, students gain practical experience and develop the leadership qualities necessary to succeed in today's competitive business environment.",
@@ -34,7 +34,7 @@ export const programs = [
     slug: "mass-communication",
     title: "Mass Communication",
     description: "Master the art of storytelling, media production, and public relations.",
-    image: "https://images.unsplash.com/photo-1455743425380-9a4f326179e8?q=80&w=600&h=400&auto=format&fit=crop",
+    image: "/images/graduant.jpg",
     aiHint: "media studio",
     details: {
       longDescription: "In the Mass Communication program, students explore the power of media and learn to create compelling narratives across various platforms. The curriculum combines theoretical knowledge with hands-on training in journalism, broadcasting, digital media, and public relations. Our state-of-the-art media labs provide students with the tools they need to produce professional-quality content and build a strong portfolio.",
