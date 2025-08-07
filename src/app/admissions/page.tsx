@@ -66,7 +66,7 @@ export default function AdmissionsPage() {
       <main className="flex-grow">
         <section className="relative h-[50vh] flex items-center justify-center text-white">
           <Image
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1740&auto=format&fit=crop"
+            src="/images/jambritman.jpg"
             alt="Students graduating"
             fill
             className="object-cover"
@@ -220,15 +220,15 @@ export default function AdmissionsPage() {
                 <CardContent className="space-y-4">
                     <div className="flex justify-between items-center">
                         <span>Undergraduate Tuition:</span>
-                        <span className="font-bold">$15,000 / year</span>
+                        <span className="font-bold">N1,000,000 / year</span>
                     </div>
                      <div className="flex justify-between items-center">
                         <span>Postgraduate Tuition:</span>
-                        <span className="font-bold">$18,500 / year</span>
+                        <span className="font-bold">N3,00,500 / year</span>
                     </div>
                      <div className="flex justify-between items-center border-t pt-4 mt-4">
                         <span className="font-bold">Total Est. Fees:</span>
-                        <span className="font-bold text-primary">$16,200 (UG)</span>
+                        <span className="font-bold text-primary">N4,000,000</span>
                     </div>
                      <p className="text-xs text-muted-foreground pt-4">This is a simplified calculator. For detailed payment plans, contact the bursary or use our financial aid portal.</p>
                 </CardContent>

@@ -6,6 +6,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { Menu, Mountain } from "lucide-react"
+import Image from "next/image"
 
 export function Header() {
   const [isSheetOpen, setSheetOpen] = useState(false)
@@ -17,6 +18,7 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 font-bold" onClick={closeSheet}>
           <Mountain className="h-6 w-6 text-primary" />
+          {/* <Image src="/images/unilogo.jpeg" alt="ritman college logo" width={60} height={60} /> */}
           <span className="text-lg font-headline">Ritman College</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">

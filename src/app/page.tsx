@@ -44,24 +44,24 @@ function AnimatedStat({ finalValue, label }: { finalValue: number; label: string
 export default function Home() {
   const news = [
     {
-      title: "Ritman College Celebrates 20 Years of Excellence",
-      date: "October 26, 2023",
-      snippet: "Join us as we mark two decades of academic achievement and community impact.",
-      image: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=600&h=400&auto=format&fit=crop",
+      title: "ICAN President Visits Ritman University; Pays Homage to Ikot Ekpene’s Paramount Ruler",
+      date: "March 27, 2025",
+      snippet: "As part of his visit to Ikot Ekpene, ICAN’s 60th President, Chief Davidson Chizuoke Stephen Alaribe, FCA, visited Ritman University, accompanied by Uyo District Chairman Edidem Utuk and Ikot Ekpene & District Society Chairman Festus Akpan Etukudoh, FCA. They were warmly received by the university’s leadership, including Founder Senator Emmanuel Ibok Essien, FNSE.",
+      image: "/images/ican-ritman.jpeg",
       aiHint: "college campus",
     },
     {
-      title: "Annual Sports Festival Kicks Off",
+      title: "COMMISSIONER OF POLICE CP BABA MOHAMMAD AZARE ON A FAMILIARIZATION VISIT IN RITMAN GROUP OF COMPANIES",
       date: "October 24, 2023",
-      snippet: "Students showcase their athletic prowess in the most anticipated event of the year.",
-      image: "https://images.unsplash.com/photo-1541252260730-0412e8e2108e?q=80&w=600&h=400&auto=format&fit=crop",
+      snippet: "The safety of both Workers, Students of Ritman Schools and Ritman University remains top priority to the visitor cum Founder of Ritman conglomerate, Senator Emmanuel Ibok Essien.",
+      image: "/images/police-ritman.jpg",
       aiHint: "students sports",
     },
     {
-      title: "New Research Center for AI and Robotics Unveiled",
+      title: "A Milestone Achieved",
       date: "October 22, 2023",
-      snippet: "The new state-of-the-art facility will foster innovation and cutting-edge research.",
-      image: "https://images.unsplash.com/photo-1518314916383-a6b46a3423a6?q=80&w=600&h=400&auto=format&fit=crop",
+      snippet: "A Milestone Achieved",
+      image: "/images/matric-ritman.jpeg",
       aiHint: "robotics lab",
     },
   ];
@@ -119,7 +119,7 @@ export default function Home() {
       <main className="flex-grow">
         <section className="relative h-[60vh] flex items-center justify-center text-white">
           <Image
-            src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1740&auto=format&fit=crop"
+            src="/images/ritcollege.png"
             alt="College campus"
             fill
             className="object-cover"
